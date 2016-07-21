@@ -1,0 +1,182 @@
+/** GLOBAL **/
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #008080;
+}
+
+#main-content, .container, .container-fluid {
+  margin: 0 10px 0;
+}
+
+/** HEADER-NAVBAR **/
+#header-nav {
+  background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+  min-height: 80px;
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+	font-size: 30px;
+	padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    color: #557c3e;
+	  font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: -10px;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list {
+  margin-left: 0px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+  text-decoration: none;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#collapsable-nav {
+	font-size: 20px;
+  border-top: none;
+  margin: 0 -40px -20px -50px;
+}
+
+#collapsable-nav ul li {
+  background-color: cyan;
+  border-bottom: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+
+.heading {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#top {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.link-to-top {
+  text-decoration: underline;
+  color: #0000EE;
+}
+
+.container-fluid > div > section {
+  background-color: #999999;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: -5px;
+  height: 100%;
+}
+
+.container-fluid > div > section:nth-child(3) {
+  margin-right: -10px;
+}
+
+.container-fluid > div > section > p {
+  font-size: 1.2em;
+  padding: 0;
+  text-align: justify;
+  margin-right, margin-left: auto;
+}
+
+.container-fluid > div > section:hover {
+  background-color: maroon;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 0 0 20px #333;
+  transition: box-shadow 0.5s;
+  height: auto;
+}
+
+/* MEDIA QUERIES */
+/********** DESKTOP **********/
+@media (max-width: 992px) {
+  section:nth-child(2) {
+    height: 100%;
+  }
+}
+
+/********** TABLET **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-6 {
+    max-width: 49.2%;
+  }
+  section:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+
+/********** MOBILE **********/
+/********** Extra small devices only **********/
+@media (max-width: 767px) {  
+  section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 1.5em;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  /* End Header */
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 1.5em;
+  }  /* End Header */
+  
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
