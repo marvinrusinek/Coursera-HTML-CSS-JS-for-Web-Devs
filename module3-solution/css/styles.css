@@ -160,11 +160,11 @@ div a:hover {
 
 /********** MOBILE **********/
 /********** Extra small devices only **********/
-@media (max-width: 767px) {  
- /* div section {
+@media (max-width: 767px) {
+  .container-fluid > div > div {
     margin-top: 5px;
     margin-bottom: 5px;
-  } */
+  }
 
   /* Header */
   .navbar-brand {
