@@ -103,6 +103,10 @@ main {
   color: #0000EE;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .container-fluid > div > div {
   background-color: #999999;
   border-radius: 10px;
