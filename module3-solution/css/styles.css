@@ -3,12 +3,18 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 16px;
   color: #fff;
   background-color: #008080;
+}
+
+main {
+  padding: 0 15px;
 }
 
 #main-content, .container, .container-fluid {
@@ -58,6 +64,10 @@ body {
   font-size: 1.8em;
 }
 
+.collapse {
+   clear: both;
+}
+
 #collapsable-nav {
 	font-size: 20px;
   border-top: none;
@@ -93,7 +103,7 @@ body {
   color: #0000EE;
 }
 
-.container-fluid > div > section {
+.container-fluid > div > div {
   background-color: #999999;
   border-radius: 10px;
   margin-right: 10px;
@@ -101,18 +111,24 @@ body {
   height: 100%;
 }
 
-.container-fluid > div > section:nth-child(3) {
+.container-fluid > div > div:nth-child(3) {
   margin-right: -10px;
 }
 
-.container-fluid > div > section > p {
+.container-fluid > div > div > section {
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.container-fluid > div > div > section > p {
   font-size: 1.2em;
   padding: 0;
   text-align: justify;
   margin-right, margin-left: auto;
 }
 
-.container-fluid > div > section:hover {
+.container-fluid > div > div:hover {
   background-color: maroon;
   border-radius: 5px;
   border: 2px solid black;
@@ -124,7 +140,7 @@ body {
 /* MEDIA QUERIES */
 /********** DESKTOP **********/
 @media (max-width: 992px) {
-  section:nth-child(2) {
+  div > section:nth-child(2) {
     height: 100%;
   }
 }
@@ -134,7 +150,7 @@ body {
   .col-sm-6 {
     max-width: 49.2%;
   }
-  section:nth-child(3) {
+  div> section:nth-child(3) {
     margin-top: 20px;
   }
 }
@@ -142,7 +158,7 @@ body {
 /********** MOBILE **********/
 /********** Extra small devices only **********/
 @media (max-width: 767px) {  
-  section {
+  div > section {
     margin-top: 5px;
     margin-bottom: 5px;
   }
