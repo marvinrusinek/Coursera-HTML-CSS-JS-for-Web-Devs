@@ -149,8 +149,8 @@ main {
   .col-sm-6 {
     max-width: 49.2%;
   }
-  div> section:nth-child(3) {
-    margin-top: 20px;
+.container-fluid > div > div:nth-child(3) {
+    margin-top: 15px;
   }
 }
 
