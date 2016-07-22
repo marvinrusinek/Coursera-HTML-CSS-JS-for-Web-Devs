@@ -103,7 +103,7 @@ main {
   color: #0000EE;
 }
 
-a:hover {
+div a:hover {
   text-decoration: underline;
 }
 
